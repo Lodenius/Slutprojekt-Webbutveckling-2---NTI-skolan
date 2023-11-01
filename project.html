@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Projekt</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Projekt</h1>
+        <nav class="links">
+            <a href="./start.html">Start</a>
+            <a href="./technique.html">Vald teknik</a>
+            <a href="./project.html">Projekt</a>
+            <a href="./steps.html">Uppbyggnad</a>
+            <a href="./sources.html">Källor</a>
+        </nav>
+    </header>
+    <main class="info-proj">
+        <section class="info-proj__project">
+            <section class="info-proj__project__stats">
+                <h3>Man saved: <span id='wins'>0</span> times</h3>
+                <h3>Man killed: <span id='kills'>0</span> times</h3>
+                <h3>Wrong letter guessed: <span id='mistakes'>0</span> of 7 </span></h3>
+            </section>
+            <section class="info-proj__project__head">
+                <h2>The hangman game! </h2>
+                <p> Guess the magic fruit!</p>
+            </section>
+            <section class="info-proj__project__points">
+                <h3>Your score: <span id='sumPoints'>0</span> points</h3>
+            </section>
+        </section>
+        
+        <section  class="info-proj__game">
+            <figure class="info-proj__game__man">
+                <svg width="450" height="250" viewBox="0 0 501 565">
+                    <ellipse id="grass" cx="250.5" cy="536" rx="250.5" ry="29" fill="green" fill-opacity="0.2"/>
+                    <!-- Scaffold & rope-->
+                    <line id="scaffold1" x1="90" y1="9" x2="90" y2="530" stroke="brown" stroke-width="15" />
+                    <line id="scaffold2" x1="83" y1="16" x2="380" y2="15" stroke="brown" stroke-width="15" />
+                    <line id="scaffold3" x1="180" y1="16" x2="90" y2="120" stroke="brown" stroke-width="15" />  
+                    <line id="rope" x1="340" y1="16" x2="340" y2="120" stroke="brown" stroke-width="5" />
+                    <!-- Legs -->
+                    <line id="leg1" x1="310" y1="440" x2="325" y2="335" stroke="black" stroke-width="12" stroke-linecap="round"/>
+                    <line id="leg2" x1="360" y1="440" x2="350" y2="335" stroke="black" stroke-width="12" stroke-linecap="round"/>
+                    <!-- Arms -->
+                    <line id="arm1" x1="315" y1="220" x2="300" y2="310" stroke="black" stroke-width="9" stroke-linecap="round"/>
+                    <line id="arm2" x1="365" y1="220" x2="375" y2="310" stroke="black" stroke-width="9" stroke-linecap="round"/>
+                    <!-- Head & body -->
+                    <circle id="head" cx="340" cy="150" r="40" stroke="black" fill="white" stroke-width="3"/>
+                    <ellipse id="body" cx="340" cy="270" rx="30" ry="80" stroke="black" fill="white" stroke-width="3"/>
+                </svg>    
+            </figure>
+
+            <p id="magicWord"></p>
+            <nav id="keyboard"></nav>
+            <button class="info-proj__game__new-btn" onClick="startOver()">Give me a fruit!</button>
+        </section> 
+    </main> 
+
+    <footer> Projekt skapat av Philippa Lodenius ⭐︎</footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
+
+

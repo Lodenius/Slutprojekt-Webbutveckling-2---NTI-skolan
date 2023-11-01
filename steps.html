@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Steg för steg</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Uppbyggnad</h1>
+        <nav class="links">
+            <a href="./start.html">Start</a>
+            <a href="./technique.html">Vald teknik</a>
+            <a href="./project.html">Projekt</a>
+            <a href="./steps.html">Uppbyggnad</a>
+            <a href="./sources.html">Källor</a>
+        </nav>
+    </header>
+    <main class="info-steps">
+        <section>
+            <h2> Skapandet av projektet - steg för steg </h2>
+        </section> 
+        <section class="info-steps__step">
+            <section class="info-steps__step-how">
+                <p> 1. Planering. <br> 
+                     Som första steg på detta projektarbetet så satte jag upp en projektplan. Där skrev jag ner vad jag skulle och ville göra utifrån de krav vi fått. <br>
+                     Efter det att planen var klar och godkänd av lärare så satte jag igång med arbetet på riktigt.
+                    </p>
+            </section>
+            <section class="info-steps__step-how ">
+                <p> 2. Skalet. <br> 
+                     Jag började med att skapa alla sidor som behövdes, ett css dokument, ett JS dokument samt 5 HTML dokument där all info skulle in. Jag kopplade sedan ihop allt och länkade 
+                     det som behövdes för att sidorna ska jobba tillsammans med varandra. Jag satte med andra ord upp skelettet på mitt arbete så det skulle bli lättare för mig att hålla koll på allt, så jag inte missade något.
+                </p> 
+                <img src="./imgs/skal.png" alt="skapade filer" height="250px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 3. Uppbyggnad av projekt. <br> 
+                     De första sidan jag skapade var sidan med mitt projekt, mitt hänga-gubbe spel, då det var den sidan som störst fokus låg på, det som skulle ta längst tid.
+                     Med det sagt så skapade jag mitt HTML dokument med alla delar som skulle finnas med: Titel, sektion för poäng, plats för SVG, plats för tangentbord samt en knapp som ger dig ett nytt ord. 
+                     Jag var inte jättenoga då jag visste att saker skulle läggas till och ändras under projektets gång när jag fixade med min JavaScript.
+                 </p>
+            </section>
+            <section class="info-steps__step-how">
+                <p> 4. SVG. <br> 
+                     Efter att skalet var uppsatt så startade jag först med att skapa min SVG. Jag började med att göra en enkel skiss på papper över hur jag ville göra så jag hade något att gå efter, jag delade då även upp bilden i de olika 
+                     delarna som jag ville att den skulle synas vid tryck av fel bokstav. Eftersom jag aldrig har skapat en SVG likt denna tidigare så var jag tvungen att göra lite research för att veta vart jag skulle börja. Jag började googla men hittade mest projekt där folk använde canvas
+                     för att bygga upp sitt spel. Jag hittade sedan en användare på codesandbox som använt sig utav SVG så jag fick lite inspiration därifrån men gjorde om så figuren blev min stil.
+                     Det var kluringt till en början med y och x axlarna, men jag fick till det tillslut.
+                </p> 
+                <img src="./imgs/SVG.png" alt="svg-man" height="250px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 5. Tangentbord och alfabetet. <br> 
+                    Det första jag skapade i min JavaScript fil var mitt alfabet och tangentbord. Enligt mig kändes det enklast att få det klart och ur vägen först för att sedan kunna gå vidare med resten av funktionerna i projektet.
+                    <br> Eftersom jag aldrig gjort ett alfabet tidigare så var det klurigt i början men så fort jag kom och tänka på DOM så blev det mycket lättare. Jag behövde bara skriva ut hela alfabetet och sedan använda mig utav metoden .split så de hamnar enskilt och sedan mappa ut
+                    dem, en bokstav per knapp, med hjälp av DOM till min HTML fil. Varje bokstav fick id't med sin egna bokstav. Denna funktionen kom jag även tillbaka till när jag skapade min funktion för att göra spelet spelbart.
+                    Jag la till en onClick på mina knappar som tog hand om vad som sker när en bokstav blir klickad på.
+                </p>
+                <img src="./imgs/alfabet.png" alt="alphabet and keyboard" height="200px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 6. Lista med ord samt slumpa fram ord vid knapptryck. <br> 
+                    Efter att ha tagit fram mitt alfabet och tangentbort så valde jag kategori av ord och tog fram en lista på ett par frukter. Jag valde att inte ta vanliga frukter, detta för att inte göra spelet allt för lätt.
+                    När listan var klar skapade jag en simpel funktion som gör att orden slumpas från listan.
+                </p>
+                <section class="info-steps__step-how-double-img">
+                    <img src="./imgs/Ordlista.png" alt="wordlist" height="200px" width="130px">
+                    <img src="./imgs/Slumpa fram ord.png" alt="random word" width="450px">
+                </section>
+            </section>
+            <section class="info-steps__step-how">
+                <p> 7. Funktion för om rätt bokstav gissas. <br>
+                    Efter att alfabet och fuktion för slumpat ord var klart så började jag med att ta fram en funktion som lägger till bokstaven om man klickat på rätt. Denna tog lång tid för mig att greppa,
+                    jag försökte många gånger och jag var tvungen att googla en hel massa för att förstå vart jag gjorde fel och vad jag gjorde rätt. Mina egna felsökningar hjälpte mig inte.
+                    Tillslut så hittade jag en användare på codepen vid namn Cathy Dutton som skapat ett Hangman spel men JavaScript. Utifrån den koden fick jag tips på hur min kod kunde se ut. Jag tog även hjälp av boken 
+                    Eloquent JavaScript där jag ordsökte på olika metoder - ex. .split, .map - och va dem gjorde. På så sätt kunde jag ta mig vidare. <br>
+                    I detta steget gjorde jag flest tester på min kod, jag var tvungen att felsöka och ta allt i flera olika steg för att se vad som fick saker att fungera och vad som inte gjorde det.
+                </p>
+                <img src="./imgs/Rätt bokstav.png" alt="correct letter" width="650px">
+            </section>
+            <section class="info-steps__step-how">
+            
+                <p> 8. Funktion för fel bokstav - SVG visas.<br>
+                    Här skapade jag koden för när man klickar på fel bokstav och gubben ska komma fram. Det tog ett tag innan jag fick till det, jag ville ha så lite kod som möjligt men 
+                    jag gjorde det istället enkelt för mig och gjorde en upprepande if-sats. När spelet startar så syns endast marken på SVG'n. När man sedan klickar på fel bokstav så kommer de fram en efter en.
+                    Eftersom att jag skapade galgen i fyra separata delar men ville att de skulle komma fram samtidigt så la jag bara alla efter varandra. Efter det så fortsatte jag på samma sätt, en ny del för ett nytt fel
+                    för att få det att fungera som jag ville. JavaScript koden gör så opaciteten på alla delarna ändras från 0 till 1. <br>
+                    Denna funktionen tog lång tid att få till, jag tänkte inte på att jag kunde använda min CSS till hjälp med att gömma delarna, så fort jag kom underfunn med det så flöt det på bra. 
+                </p>
+                <section class="info-steps__step-how-double-img">
+                    <img src="./imgs/visa gubbe vid feltryck.png" alt="wrong letter" height="300px">
+                    <img src="./imgs/css svg.png" alt="css svg" height="300px">
+                </section>
+
+            </section>
+            <section class="info-steps__step-how">
+                <p> 9. Funktion för uppdatering av antal fel. <br>
+                     När fel bokstav klickas på så ökar ens misstag och man har färre försök på sig att gissa rätt på ordet. Man har 7 felaktiga bokstäver på sig innan hela SVG'n syns och man förlorar spelet.
+                     Men hhjälp av denna funktionen så vet man hela tiden hur många bokstäver man har haft fel på samt hur många försök man har kvar.
+                </p>
+                <img src="./imgs/Uppdatera räknaren vid feltryck.png" alt="update wrong" width="450px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 10. Funktioner för vinst och förlust. <br>
+                    För att spelet ska vara ett spel så behöver man självklart kunan vinna och förlora. Jag valde att lägga till en text, poäng och statistik på båda. Vinner man så ersätts tangentbordet med en textrad som säger att man gissat på rätt ord,
+                    din statistik på antalet vunna spel ökar med en samt att din poäng ökar med 150. <br>
+                    När man förlorar så ersätts tangentbordet istället med det texten "oh no" och man får även reda på det rätta ordet. När man förlorar så blir man av med 100 poäng samt att förlust statistiken ökar.
+                </p>
+                <section class="info-steps__step-how-double-img">
+                    <img src="./imgs/Vinst.png" alt="victory" width="450px">
+                    <img src="./imgs/Om förlust.png" alt="loss" width="450px">
+                </section>
+            </section>
+            <section class="info-steps__step-how">
+                <p> 11. Sammanställ alla funktioner för att göra spelet spelbart samt göra klickade bokstäver utgråade.  <br>
+                    Här skapade jag min stora funktion för att göra så spelet är användbart. Det var från början flera mindre funktioner som jag sedan samlade i en för att göra koden mer läsbar och även kortare.
+                    När jag gjorde denna insåg jag att jag ville göra funktionen med att bokstäver man klickat på blir utgråade - så man ser vilka man gissat på redan - och la därför till kodrad 2 i funktionen.
+                    Det var i detta steget som jag insåg att mina tangenter behövde denna funktionen som en onClick för att de skulle fungera. 
+                </p>
+                <img src="./imgs/Användbart spel.png" alt="working game" height="200px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 12. Funktion för nollställning och nytt ord. <br>
+                Mitt sista steg blev att skapa en funktion som nollställer allt när man hämtar ett nytt ord - svg gubbens delar försvinner, ett nytt ord slumpas fram, bokstäverna återställs och räknaren för antalet fel bokstäver återgår till 0.
+                Detta för att en anväjdare ska kunna spela om spelet och testa igen. Antalet vinster och förluster ligger kvar, lika så ens poäng, för att man ska kunna se sin statistik.  
+                </p>
+                <img src="./imgs/Omstart.png" alt="start over" height="200px">
+            </section>
+            <section class="info-steps__step-how">
+                <p> 13. Resterande sidor på webbplatsen. <br>
+                    När mitt stora projekt var klart så gick jag igenom och fyllde ut resterande sidor. Jag börhade att skriva en övergripande sammanfattning på startsidan där man kan läsa om kursen och vem jag är. En liten introduktion vad man 
+                    kommer få se på sidorna, kort om kursen och en liten beskrivning om vem jag som skapat projektet är och varför jag valde just Webbutveckling 2.
+                </p>
+            </section>
+            <section class="info-steps__step-how">
+                <p> 14. Finslip med CSS. <br>
+                    Jag avslutade min webbsida med all CSS för att få allt att se tydligt och fint ut. Jag la ihop allt och strukturerade tydligt upp min css utefter ordningen på alla sidorna med kommentarer för att 
+                    visa vart en ny sidas css börjar. Den generella css'n la jag högst upp - ex. styling för flikarna, footer, länkar, storlek på text, bodyn mm.
+                </p>
+            </section>
+        </section>
+    </main>
+    
+    <footer> Projekt skapat av Philippa Lodenius ⭐︎</footer>
+    
+</body>
+</html>
